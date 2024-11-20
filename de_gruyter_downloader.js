@@ -5,6 +5,7 @@
 // @version      1.0.0
 // @description  Batch download single chapter PDFs for De Gruyter books
 // @author       Philipp Immel
+// @license      GPL-3.0-or-later
 // @match        https://www.degruyter.com/*/html
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=degruyter.com
 // @grant        GM_download
