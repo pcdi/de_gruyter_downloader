@@ -2,7 +2,7 @@
 // ==UserScript==
 // @name         De Gruyter Downloader
 // @namespace    https://pcdi.github.io
-// @version      1.0.0
+// @version      1.1.0
 // @description  Batch download single chapter PDFs for De Gruyter books
 // @author       Philipp Immel
 // @license      GPL-3.0-or-later
@@ -27,9 +27,6 @@ function downloadPdfs() {
     var btn = document.createElement("BUTTON");
     btn.innerHTML = "Download PDFs";
     btn.id = "downloadPdfs";
-    btn.style.position = "fixed";
-    btn.style.top = "0";
-    btn.style.left = "0";
     btn.addEventListener("click", downloadPdfs);
-    document.body.appendChild(btn);
+    document.getElementsByTagName("h1")[0]?.append(btn);
 })();
